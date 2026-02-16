@@ -8,29 +8,17 @@ export default defineConfig([
   tseslint.configs.recommended,
   {
     rules: {
-      //"@typescript-eslint/no-unused-vars": "error",
-      //"arrow-body-style": ["error", "always"],
-      //"capitalized-comments": ["warn", "always"],
-      //"@typescript-eslint/no-explicit-any": "error",
-      //"@typescript-eslint/no-unsafe-assignment": "error",
-      //"@typescript-eslint/no-implicit-any": "error"
-      "@typescript-eslint/no-floating-promises": "error",
-      "@typescript-eslint/require-await": "error",
-      "@typescript-eslint/eqeqeq": [
-        "error", 
-      {
-        "selector": "variable",
-        "format": ["camelCase"]
-      },
-      {
-        "selector": "function",
-        "format": ["camelCase"]
-      },
-      {
-        "selector": "typeLike",
-        "format": ["PascalCase"]
-      }
-    ]
+      "@typescript-eslint/no-unused-vars": "error",
+      "func-style": ["error", "expression"],
+      "prefer-arrow-callback": "error",
+      "arrow-body-style": ["error", "always"],
+      "@typescript-eslint/no-explicit-any": "error",
+      "eqeqeq": "error",
+      "@typescript-eslint/naming-convention": [
+  "error",
+  { "selector": "variableLike", "format": ["camelCase"] },
+  { "selector": "typeLike", "format": ["PascalCase"] }
+],    
   }
 }
 ]);
