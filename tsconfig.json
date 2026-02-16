@@ -3,13 +3,17 @@
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
-    // "outDir": "./dist",
+    "module": "NodeNext",
+    "target" : "ESNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+     "outDir": "./dist",
+  
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
-    "types": [],
+    "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -34,7 +38,9 @@
 
     // Recommended Options
     "strict": true,
+    "noImplicitAny": true,
     "jsx": "react-jsx",
+    //"noImplicitAny": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
@@ -42,3 +48,4 @@
     "skipLibCheck": true,
   }
 }
+

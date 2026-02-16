@@ -1,13 +1,10 @@
-// Types
 
-interface countryInfo {
-  name : string;
-  capital : string;
-  currency : string;
-  flag : string;
-  regoin : string;
-  population : number;
-  languages : string[];
 
-}
+import { getCountryInfo } from "./services/fetchDestinations.js";
 
+const runApp = async () => {
+  const result = await getCountryInfo("Sweden");
+  console.dir(result, { depth: null });
+};
+
+runApp();
