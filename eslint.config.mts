@@ -25,12 +25,16 @@ export default defineConfig([
   {
     rules: {
       "@typescript-eslint/no-unused-vars": "error",
+      "func-style": ["error", "expression"],
+      "prefer-arrow-callback": "error",
       "arrow-body-style": ["error", "always"],
       "@typescript-eslint/no-explicit-any": "error",
-      "@typescript-eslint/no-unsafe-assignment": "error",
-      "@typescript-eslint/no-floating-promises": "error",
-      "@typescript-eslint/require-await": "error",
-      "eqeqeq":["error", "always"],
+      "eqeqeq": "error",
+      "@typescript-eslint/naming-convention": [
+  "error",
+  { "selector": "variableLike", "format": ["camelCase"] },
+  { "selector": "typeLike", "format": ["PascalCase"] }
+],    
   }
 }
 ]);
