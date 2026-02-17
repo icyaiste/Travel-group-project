@@ -1,3 +1,11 @@
+// Trip model and country information interfaces
+
+export interface Trip {
+  id: string;
+  destination: string;
+  startDate: Date;
+  activities: [];
+}
 
 export interface countryInfo {
   name: string;

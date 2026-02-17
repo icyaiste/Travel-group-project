@@ -1,15 +1,8 @@
 
 
-import { getCountryInfo } from "./services/fetchDestinations.js";
+import { getCountryInfo } from "./services/fetchDestinations.ts";
+import type { Trip } from "./types/interfaces.ts";
 
-
-// Example Trip type e.g. , for a trip to Sweden starting on June 1, 2026
-type Trip = {
-  id: string;
-  destination: string;
-  startDate: Date;
-  activities: [];
-};
 
 const runApp = async (): Promise<void> => {
 
