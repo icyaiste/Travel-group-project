@@ -1,5 +1,5 @@
 
-export interface CountryInfo {
+export interface countryInfo {
   name: string;
   capital: string;
   currency: string;
@@ -10,7 +10,7 @@ export interface CountryInfo {
 }
 
 
-export interface RestCountryApiResponse {
+export interface getDestinationInfo {
   name: {
     common: string;
   };

@@ -1,8 +1,8 @@
-import type { CountryInfo, RestCountryApiResponse } from "../types/interfaces.ts";
+import type { countryInfo, getDestinationInfo } from "../types/interfaces.ts";
 
 export const getCountryInfo = async (
   countryName: string
-): Promise<CountryInfo | null> => {
+): Promise<countryInfo | null> => {
   try {
     const response = await fetch(
       `https://restcountries.com/v3.1/name/${countryName}`
@@ -12,7 +12,7 @@ export const getCountryInfo = async (
       throw new Error(`Country not found: ${countryName}`);
     }
 
-    const data = (await response.json()) as RestCountryApiResponse[];
+    const data = (await response.json()) as getDestinationInfo[];
 
     const country = data[0];
 
