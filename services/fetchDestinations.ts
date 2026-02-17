@@ -20,6 +20,7 @@ export const getCountryInfo = async (
       return null;
     }
 
+    
     const currencyObject = country.currencies
       ? Object.values(country.currencies)[0]
       : undefined;
