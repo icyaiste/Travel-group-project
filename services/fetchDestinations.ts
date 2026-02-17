@@ -1,4 +1,4 @@
-import type { countryInfo, getDestinationInfo } from "../types/interfaces.ts";
+import type { countryInfo, getDestinationInfo } from "../types/interfaces";
 
 export const getCountryInfo = async (
   countryName: string

@@ -1,6 +1,6 @@
 
 
-import { getCountryInfo } from "./services/fetchDestinations.ts";
+import { getCountryInfo } from "./services/fetchDestinations";
 import type { Trip } from "./types/interfaces.ts";
 
 
