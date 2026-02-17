@@ -36,7 +36,6 @@
     "strict": true,
     "noImplicitAny": true,
     "jsx": "react-jsx",
-    "noImplicitAny": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
