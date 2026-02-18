@@ -3,7 +3,7 @@
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
-    "module": "Commonjs",
+    "module": "CommonJS",
     "target" : "ES2020",
     "moduleResolution": "Node",
     "esModuleInterop": true,
@@ -39,8 +39,7 @@
     // Recommended Options
     "strict": true,
     "noImplicitAny": true,
-    "jsx": "react-jsx",
-   "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",

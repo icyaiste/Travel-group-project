@@ -1,7 +1,5 @@
-
-
 import { getCountryInfo } from "./services/fetchDestinations";
-import type { Trip } from "./types/interfaces.ts";
+import type { Trip } from "./types/interfaces";
 
 
 const runApp = async (): Promise<void> => {
