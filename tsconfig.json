@@ -3,12 +3,16 @@
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
-    // "outDir": "./dist",
+    "module": "Commonjs",
+    "target" : "ES2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+     "outDir": "./dist",
+  
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
     "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
@@ -36,10 +40,11 @@
     "strict": true,
     "noImplicitAny": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+   "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
   }
 }
+
