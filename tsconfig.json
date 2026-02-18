@@ -13,6 +13,11 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
+    "module": "commonjs",
+    "target": "es2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
@@ -43,7 +48,6 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
-
