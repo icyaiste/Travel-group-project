@@ -1,8 +1,8 @@
-import type { countryInfo, getDestinationInfo } from "../types/interfaces";
+import type { CountryInfo, GetDestinationInfo } from "../types/interfaces";
 
 export const getCountryInfo = async (
   countryName: string
-): Promise<countryInfo | null> => {
+): Promise<CountryInfo | null> => {
   try {
     const response = await fetch(
       `https://restcountries.com/v3.1/name/${countryName}`
@@ -12,7 +12,7 @@ export const getCountryInfo = async (
       throw new Error(`Country not found: ${countryName}`);
     }
 
-    const data = (await response.json()) as getDestinationInfo[];
+    const data = (await response.json()) as GetDestinationInfo[];
 
     const country = data[0];
 

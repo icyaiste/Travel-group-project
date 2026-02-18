@@ -7,7 +7,7 @@ export interface Trip {
   activities: [];
 }
 
-export interface countryInfo {
+export interface CountryInfo {
   name: string;
   capital: string;
   currency: string;
@@ -18,7 +18,7 @@ export interface countryInfo {
 }
 
 
-export interface getDestinationInfo {
+export interface GetDestinationInfo {
   name: {
     common: string;
   };

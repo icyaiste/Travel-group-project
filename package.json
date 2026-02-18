@@ -1,12 +1,14 @@
 {
   "name": "travel-project",
   "version": "1.0.0",
+  "module": "CommonJS",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
