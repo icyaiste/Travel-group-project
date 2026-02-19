@@ -1,11 +1,11 @@
 import type { CountryInfo, GetDestinationInfo } from "../types/interfaces";
 
 export const getCountryInfo = async (
-  countryName: string
+  countryName: string,
 ): Promise<CountryInfo | null> => {
   try {
     const response = await fetch(
-      `https://restcountries.com/v3.1/name/${countryName}`
+      `https://restcountries.com/v3.1/name/${countryName}`,
     );
 
     if (!response.ok) {
@@ -20,7 +20,6 @@ export const getCountryInfo = async (
       return null;
     }
 
-    
     const currencyObject = country.currencies
       ? Object.values(country.currencies)[0]
       : undefined;
@@ -38,9 +37,7 @@ export const getCountryInfo = async (
       flag: country.flags?.png ?? "",
       region: country.region,
       population: country.population,
-      languages: country.languages
-        ? Object.values(country.languages)
-        : [],
+      languages: country.languages ? Object.values(country.languages) : [],
     };
   } catch (error) {
     console.error("Error fetching country:", error);
