@@ -17,7 +17,6 @@ export interface countryInfo {
   languages: string[];
 }
 
-
 export interface getDestinationInfo {
   name: {
     common: string;
