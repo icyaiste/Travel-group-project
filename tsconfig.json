@@ -44,7 +44,7 @@
     "strict": true,
     "noImplicitAny": true,
     // "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",

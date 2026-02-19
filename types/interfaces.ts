@@ -4,7 +4,7 @@ export interface Activity {
   id: string;
   name: string;
   cost: number;
-  categories: string[];
+  category: "outdoors" | "culinary" | "sightseeing";
   startTime: Date;
 }
 
