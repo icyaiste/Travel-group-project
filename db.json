@@ -1,0 +1,212 @@
+{
+  "trips": [
+    {
+      "id": "trip-1",
+      "destination": "Paris, France",
+      "startDate": "2026-06-01T00:00:00.000Z",
+      "activities": [
+        { "id": "act-1-1", "name": "Louvre Museum Visit (guided)", "cost": 320, "category": "sightseeing", "startTime": "2026-06-01T09:00:00.000Z" },
+        { "id": "act-1-2", "name": "French Pastry Tasting Tour", "cost": 790, "category": "culinary", "startTime": "2026-06-01T13:00:00.000Z" },
+        { "id": "act-1-3", "name": "Versailles Day Trip (premium tour)", "cost": 2250, "category": "outdoors", "startTime": "2026-06-01T17:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-2",
+      "destination": "Rome, Italy",
+      "startDate": "2026-06-05T00:00:00.000Z",
+      "activities": [
+        { "id": "act-2-1", "name": "Colosseum Guided Tour", "cost": 690, "category": "sightseeing", "startTime": "2026-06-05T10:00:00.000Z" },
+        { "id": "act-2-2", "name": "Pasta Cooking Class", "cost": 1150, "category": "culinary", "startTime": "2026-06-05T15:00:00.000Z" },
+        { "id": "act-2-3", "name": "Private Vatican Museums + Sistine Chapel Tour", "cost": 2600, "category": "sightseeing", "startTime": "2026-06-05T18:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-3",
+      "destination": "Barcelona, Spain",
+      "startDate": "2026-06-10T00:00:00.000Z",
+      "activities": [
+        { "id": "act-3-1", "name": "Sagrada Familia Visit", "cost": 420, "category": "sightseeing", "startTime": "2026-06-10T09:30:00.000Z" },
+        { "id": "act-3-2", "name": "Tapas & Wine Tour", "cost": 990, "category": "culinary", "startTime": "2026-06-10T14:00:00.000Z" },
+        { "id": "act-3-3", "name": "Montserrat Day Trip (guided + transport)", "cost": 2100, "category": "outdoors", "startTime": "2026-06-10T17:30:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-4",
+      "destination": "Berlin, Germany",
+      "startDate": "2026-06-15T00:00:00.000Z",
+      "activities": [
+        { "id": "act-4-1", "name": "Pergamon Museum", "cost": 260, "category": "sightseeing", "startTime": "2026-06-15T10:00:00.000Z" },
+        { "id": "act-4-2", "name": "Chef’s Tasting Menu (fine dining)", "cost": 2300, "category": "culinary", "startTime": "2026-06-15T16:00:00.000Z" },
+        { "id": "act-4-3", "name": "Tiergarten Cycling (rental)", "cost": 320, "category": "outdoors", "startTime": "2026-06-15T18:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-5",
+      "destination": "Amsterdam, Netherlands",
+      "startDate": "2026-06-20T00:00:00.000Z",
+      "activities": [
+        { "id": "act-5-1", "name": "Anne Frank House", "cost": 240, "category": "sightseeing", "startTime": "2026-06-20T09:00:00.000Z" },
+        { "id": "act-5-2", "name": "Canal Dinner Cruise (premium)", "cost": 2150, "category": "culinary", "startTime": "2026-06-20T14:00:00.000Z" },
+        { "id": "act-5-3", "name": "Canal Kayaking", "cost": 520, "category": "outdoors", "startTime": "2026-06-20T17:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-6",
+      "destination": "Lisbon, Portugal",
+      "startDate": "2026-06-25T00:00:00.000Z",
+      "activities": [
+        { "id": "act-6-1", "name": "Belém Tower Visit", "cost": 190, "category": "sightseeing", "startTime": "2026-06-25T09:30:00.000Z" },
+        { "id": "act-6-2", "name": "Food & Fado Night (premium package)", "cost": 2050, "category": "culinary", "startTime": "2026-06-25T13:00:00.000Z" },
+        { "id": "act-6-3", "name": "Sintra Nature Hike (tour)", "cost": 850, "category": "outdoors", "startTime": "2026-06-25T16:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-7",
+      "destination": "Athens, Greece",
+      "startDate": "2026-07-01T00:00:00.000Z",
+      "activities": [
+        { "id": "act-7-1", "name": "Acropolis Tour", "cost": 520, "category": "sightseeing", "startTime": "2026-07-01T09:00:00.000Z" },
+        { "id": "act-7-2", "name": "Greek Cooking Class", "cost": 980, "category": "culinary", "startTime": "2026-07-01T14:00:00.000Z" },
+        { "id": "act-7-3", "name": "Santorini Day Trip (flight + tour)", "cost": 3200, "category": "outdoors", "startTime": "2026-07-01T18:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-8",
+      "destination": "Budapest, Hungary",
+      "startDate": "2026-07-05T00:00:00.000Z",
+      "activities": [
+        { "id": "act-8-1", "name": "Parliament Building Tour", "cost": 310, "category": "sightseeing", "startTime": "2026-07-05T10:00:00.000Z" },
+        { "id": "act-8-2", "name": "Danube Dinner Cruise (premium)", "cost": 2100, "category": "culinary", "startTime": "2026-07-05T15:00:00.000Z" },
+        { "id": "act-8-3", "name": "Danube River Kayak", "cost": 750, "category": "outdoors", "startTime": "2026-07-05T18:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-9",
+      "destination": "Prague, Czech Republic",
+      "startDate": "2026-07-10T00:00:00.000Z",
+      "activities": [
+        { "id": "act-9-1", "name": "Prague Castle Tour", "cost": 420, "category": "sightseeing", "startTime": "2026-07-10T09:00:00.000Z" },
+        { "id": "act-9-2", "name": "Beer Spa Experience (premium)", "cost": 2400, "category": "culinary", "startTime": "2026-07-10T14:00:00.000Z" },
+        { "id": "act-9-3", "name": "Petrin Hill Climb (funicular + walk)", "cost": 180, "category": "outdoors", "startTime": "2026-07-10T17:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-10",
+      "destination": "Vienna, Austria",
+      "startDate": "2026-07-15T00:00:00.000Z",
+      "activities": [
+        { "id": "act-10-1", "name": "Schönbrunn Palace", "cost": 480, "category": "sightseeing", "startTime": "2026-07-15T10:00:00.000Z" },
+        { "id": "act-10-2", "name": "Classical Concert at a Historic Venue", "cost": 2200, "category": "sightseeing", "startTime": "2026-07-15T14:00:00.000Z" },
+        { "id": "act-10-3", "name": "Vienna Woods Hike (guided)", "cost": 390, "category": "outdoors", "startTime": "2026-07-15T17:30:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-11",
+      "destination": "New York, USA",
+      "startDate": "2026-08-01T00:00:00.000Z",
+      "activities": [
+        { "id": "act-11-1", "name": "Broadway Show (prime seats)", "cost": 2600, "category": "sightseeing", "startTime": "2026-08-01T09:00:00.000Z" },
+        { "id": "act-11-2", "name": "NYC Pizza Crawl", "cost": 890, "category": "culinary", "startTime": "2026-08-01T13:00:00.000Z" },
+        { "id": "act-11-3", "name": "Central Park Bike Ride (rental)", "cost": 420, "category": "outdoors", "startTime": "2026-08-01T17:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-12",
+      "destination": "Tokyo, Japan",
+      "startDate": "2026-08-05T00:00:00.000Z",
+      "activities": [
+        { "id": "act-12-1", "name": "Private Tokyo Architecture & Museum Tour", "cost": 2400, "category": "sightseeing", "startTime": "2026-08-05T09:00:00.000Z" },
+        { "id": "act-12-2", "name": "Sushi Making Class", "cost": 1650, "category": "culinary", "startTime": "2026-08-05T14:00:00.000Z" },
+        { "id": "act-12-3", "name": "Mount Takao Hike (transport + guide)", "cost": 520, "category": "outdoors", "startTime": "2026-08-05T18:00:00.000Z" }
+      ]
+    },
+    {
+      "id": "trip-13",
+      "destination": "Bangkok, Thailand",
+      "startDate": "2026-08-10T00:00:00.000Z",
+      "activities": [
+        { "id": "act-13-1", "name": "Grand Palace Tour", "cost": 420, "category": "sightseeing", "startTime": "2026-08-10T09:30:00.000Z" },
+        { "id": "act-13-2", "name": "Michelin Street Food & Chef Experience", "cost": 2100, "category": "culinary", "startTime": "2026-08-10T14:00:00.000Z" },
+        { "id": "act-13-3", "name": "Ayutthaya Day Trip (guided + transport)", "cost": 2300, "category": "outdoors", "startTime": "2026-08-10T18:00:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-14",
+      "destination": "Dubai, UAE",
+      "startDate": "2026-08-15T00:00:00.000Z",
+      "activities": [
+        { "id": "act-14-1", "name": "Burj Khalifa Observation Deck (prime time)", "cost": 2100, "category": "sightseeing", "startTime": "2026-08-15T10:00:00.000Z" },
+        { "id": "act-14-2", "name": "Luxury Dinner Cruise", "cost": 2400, "category": "culinary", "startTime": "2026-08-15T15:00:00.000Z" },
+        { "id": "act-14-3", "name": "Desert Safari Adventure (premium)", "cost": 3200, "category": "outdoors", "startTime": "2026-08-15T18:30:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-15",
+      "destination": "Sydney, Australia",
+      "startDate": "2026-08-20T00:00:00.000Z",
+      "activities": [
+        { "id": "act-15-1", "name": "Sydney Opera House Tour", "cost": 780, "category": "sightseeing", "startTime": "2026-08-20T09:00:00.000Z" },
+        { "id": "act-15-2", "name": "Harbour Seafood Lunch", "cost": 950, "category": "culinary", "startTime": "2026-08-20T13:00:00.000Z" },
+        { "id": "act-15-3", "name": "Blue Mountains Day Trip (guided)", "cost": 2100, "category": "outdoors", "startTime": "2026-08-20T17:00:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-16",
+      "destination": "Rio de Janeiro, Brazil",
+      "startDate": "2026-09-01T00:00:00.000Z",
+      "activities": [
+        { "id": "act-16-1", "name": "Christ the Redeemer Visit", "cost": 520, "category": "sightseeing", "startTime": "2026-09-01T09:00:00.000Z" },
+        { "id": "act-16-2", "name": "Brazilian BBQ Experience", "cost": 890, "category": "culinary", "startTime": "2026-09-01T14:00:00.000Z" },
+        { "id": "act-16-3", "name": "Hang Gliding Experience (package)", "cost": 2400, "category": "outdoors", "startTime": "2026-09-01T18:00:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-17",
+      "destination": "Marrakech, Morocco",
+      "startDate": "2026-09-05T00:00:00.000Z",
+      "activities": [
+        { "id": "act-17-1", "name": "Bahia Palace Tour", "cost": 260, "category": "sightseeing", "startTime": "2026-09-05T09:30:00.000Z" },
+        { "id": "act-17-2", "name": "Moroccan Cooking Workshop", "cost": 790, "category": "culinary", "startTime": "2026-09-05T14:00:00.000Z" },
+        { "id": "act-17-3", "name": "Atlas Mountains Excursion (day trip)", "cost": 2100, "category": "outdoors", "startTime": "2026-09-05T18:00:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-18",
+      "destination": "Cape Town, South Africa",
+      "startDate": "2026-09-10T00:00:00.000Z",
+      "activities": [
+        { "id": "act-18-1", "name": "Table Mountain Cableway", "cost": 520, "category": "sightseeing", "startTime": "2026-09-10T09:00:00.000Z" },
+        { "id": "act-18-2", "name": "Cape Winelands Tour", "cost": 1850, "category": "culinary", "startTime": "2026-09-10T14:00:00.000Z" },
+        { "id": "act-18-3", "name": "Shark Cage Diving (package)", "cost": 2900, "category": "outdoors", "startTime": "2026-09-10T18:00:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-19",
+      "destination": "Bali, Indonesia",
+      "startDate": "2026-09-15T00:00:00.000Z",
+      "activities": [
+        { "id": "act-19-1", "name": "Uluwatu Temple Visit", "cost": 220, "category": "sightseeing", "startTime": "2026-09-15T09:00:00.000Z" },
+        { "id": "act-19-2", "name": "Balinese Cooking Class", "cost": 690, "category": "culinary", "startTime": "2026-09-15T14:00:00.000Z" },
+        { "id": "act-19-3", "name": "Private Ubud Jungle & Waterfall Tour", "cost": 2100, "category": "outdoors", "startTime": "2026-09-15T18:00:00.000Z" }
+      ]
+    },
+
+    {
+      "id": "trip-20",
+      "destination": "Cancun, Mexico",
+      "startDate": "2026-09-20T00:00:00.000Z",
+      "activities": [
+        { "id": "act-20-1", "name": "Chichen Itza Tour", "cost": 1650, "category": "sightseeing", "startTime": "2026-09-20T09:00:00.000Z" },
+        { "id": "act-20-2", "name": "Catamaran Sunset Dinner Cruise (premium)", "cost": 2200, "category": "culinary", "startTime": "2026-09-20T14:00:00.000Z" },
+        { "id": "act-20-3", "name": "Scuba Diving Intro Course (package)", "cost": 2600, "category": "outdoors", "startTime": "2026-09-20T18:00:00.000Z" }
+      ]
+    }
+  ]
+}

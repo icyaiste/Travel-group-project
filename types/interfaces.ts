@@ -1,13 +1,21 @@
 // Trip model and country information interfaces
 
+export interface Activity {
+  id: string;
+  name: string;
+  cost: number;
+  category: "outdoors" | "culinary" | "sightseeing";
+  startTime: Date;
+}
+
 export interface Trip {
   id: string;
   destination: string;
   startDate: Date;
-  activities: [];
+  activities: Activity[];
 }
 
-export interface countryInfo {
+export interface CountryInfo {
   name: string;
   capital: string;
   currency: string;
@@ -17,7 +25,7 @@ export interface countryInfo {
   languages: string[];
 }
 
-export interface getDestinationInfo {
+export interface GetDestinationInfo {
   name: {
     common: string;
   };
