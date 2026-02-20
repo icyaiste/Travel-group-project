@@ -3,16 +3,20 @@
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
-    "module": "CommonJS",
-    "target" : "ES2020",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-     "outDir": "./dist",
-  
+    // "module": "CommonJS",
+    // "target": "ES2020",
+    // "moduleResolution": "Node",
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
+    "module": "commonjs",
+    "target": "es2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
@@ -39,11 +43,11 @@
     // Recommended Options
     "strict": true,
     "noImplicitAny": true,
+    // "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
-
