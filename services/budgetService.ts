@@ -1,39 +1,11 @@
-// mock data for testing
-const myParisTrip: Trip = {
-  id: "trip-1",
-  destination: "Paris",
-  startDate: new Date("2026-07-01"),
-  activities: [
-    {
-      id: "a1",
-      name: "Eiffel Tower",
-      cost: 50,
-      category: "sightseeing",
-      startTime: new Date(),
-    },
-    {
-      id: "a2",
-      name: "Louvre",
-      cost: 30,
-      category: "culinary",
-      startTime: new Date(),
-    },
-  ],
-};
-
-// Calculate total cost
-
+import fs from "node:fs/promises";
 import { Trip, Activity } from "../types/interfaces";
 
 export const calculateTotalCost = (trip: Trip): number => {
-  if (!trip || !trip.activities) return 0;
-
   return trip.activities.reduce((sum, activity) => {
     return sum + activity.cost;
   }, 0);
 };
-
-// Identify high-cost activities
 
 export const identifyHighCostActivities = (
   trip: Trip,
@@ -44,8 +16,31 @@ export const identifyHighCostActivities = (
   });
 };
 
-const total = calculateTotalCost(myParisTrip);
-const expensiveStuff = identifyHighCostActivities(myParisTrip, 20);
+interface DBStructure {
+  trips: Trip[];
+}
 
-console.log(`Total Cost: $${total}`);
-console.log("Expensive Activities over your budget:", expensiveStuff);
+export const processTrips = async (): Promise<void> => {
+  try {
+    const data: string = await fs.readFile("./db.json", "utf-8");
+    const parsedData = JSON.parse(data) as DBStructure;
+    const trips: Trip[] = parsedData.trips;
+
+    console.log("--- Trip Budget Report --- \n");
+
+    trips.forEach((trip) => {
+      const total = calculateTotalCost(trip);
+      const expensive = identifyHighCostActivities(trip, 2000);
+
+      console.log(`\nTrip to ${trip.destination}`);
+      console.table(trip.activities);
+      console.log(`Total Cost: ${total}`);
+      console.log(`High Cost Items: ${expensive.length}`);
+      console.log("=".repeat(40));
+    });
+  } catch (error) {
+    console.error("Error reading db.json:", error);
+  }
+};
+
+processTrips();
