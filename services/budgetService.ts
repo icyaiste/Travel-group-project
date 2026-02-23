@@ -1,5 +1,6 @@
+
 import fs from "node:fs/promises";
-import { Trip, Activity } from "../types/interfaces";
+import { Trip, Activity, Database } from "../types/interfaces";
 
 export const calculateTotalCost = (trip: Trip): number => {
   return trip.activities.reduce((sum, activity) => {
@@ -16,14 +17,11 @@ export const identifyHighCostActivities = (
   });
 };
 
-interface DBStructure {
-  trips: Trip[];
-}
 
 export const processTrips = async (): Promise<void> => {
   try {
     const data: string = await fs.readFile("./db.json", "utf-8");
-    const parsedData = JSON.parse(data) as DBStructure;
+    const parsedData = JSON.parse(data) as Database;
     const trips: Trip[] = parsedData.trips;
 
     console.log("--- Trip Budget Report --- \n");
@@ -43,4 +41,6 @@ export const processTrips = async (): Promise<void> => {
   }
 };
 
-processTrips();
+processTrips().catch((error) => {
+  console.error("Unhandled error:", error);
+});
