@@ -44,3 +44,7 @@ export const getCountryInfo = async (
     return null;
   }
 };
+
+getCountryInfo("France").catch((error) => {
+  console.error("Unhandled error:", error);
+});
