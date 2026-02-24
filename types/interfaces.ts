@@ -1,5 +1,3 @@
-// Trip model and country information interfaces
-
 export interface Database {
   trips: Trip[];
 }
