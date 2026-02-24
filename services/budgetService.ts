@@ -1,46 +1,35 @@
-
-import fs from "node:fs/promises";
+import * as fs from "fs";
+import * as path from "path";
 import { Trip, Activity, Database } from "../types/interfaces";
 
+// Loads all trips from db.json
+export const loadTrips = (): Trip[] => {
+  const dbPath = path.join(__dirname, "../../db.json");
+  const raw = fs.readFileSync(dbPath, "utf-8");
+  const db: Database = JSON.parse(raw);
+  return db.trips;
+};
+
+// Calculates the total cost of all activities in a trip
 export const calculateTotalCost = (trip: Trip): number => {
-  return trip.activities.reduce((sum, activity) => {
-    return sum + activity.cost;
-  }, 0);
+  return trip.activities.reduce((sum, activity) => sum + activity.cost, 0);
 };
 
-export const identifyHighCostActivities = (
-  trip: Trip,
-  threshold: number,
-): Activity[] => {
-  return trip.activities.filter((activity) => {
-    return activity.cost > threshold;
-  });
+// Returns activities that exceed the given cost threshold
+export const getHighCostActivities = (trip: Trip, threshold: number): Activity[] => {
+  return trip.activities.filter((activity) => activity.cost > threshold);
 };
 
-
-export const processTrips = async (): Promise<void> => {
-  try {
-    const data: string = await fs.readFile("./db.json", "utf-8");
-    const parsedData = JSON.parse(data) as Database;
-    const trips: Trip[] = parsedData.trips;
-
-    console.log("--- Trip Budget Report --- \n");
-
-    trips.forEach((trip) => {
-      const total = calculateTotalCost(trip);
-      const expensive = identifyHighCostActivities(trip, 2000);
-
-      console.log(`\nTrip to ${trip.destination}`);
-      console.table(trip.activities);
-      console.log(`Total Cost: ${total}`);
-      console.log(`High Cost Items: ${expensive.length}`);
-      console.log("=".repeat(40));
-    });
-  } catch (error) {
-    console.error("Error reading db.json:", error);
-  }
+// Returns total cost grouped by category
+export const getCostByCategory = (trip: Trip): Record<string, number> => {
+  return trip.activities.reduce<Record<string, number>>((acc, activity) => {
+    acc[activity.category] = (acc[activity.category] ?? 0) + activity.cost;
+    return acc;
+  }, {});
 };
 
-processTrips().catch((error) => {
-  console.error("Unhandled error:", error);
-});
+// Returns true if total cost exceeds the budget limit
+export const isOverBudget = (trip: Trip, budgetLimit: number): boolean => {
+  return calculateTotalCost(trip) > budgetLimit;
+};
+
