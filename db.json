@@ -41,6 +41,62 @@
           "startTime": "1234-01-02T19:06:32.000Z"
         }
       ]
+    },
+    {
+      "id": "trip-1771925025159",
+      "destination": "Athens, Greece",
+      "startDate": "2026-02-24T00:00:00.000Z",
+      "activities": [
+        {
+          "id": "act-1771925054650",
+          "name": "Street Food Tour",
+          "cost": 400,
+          "category": "culinary",
+          "startTime": "2026-02-24T12:00:54.000Z"
+        }
+      ]
+    },
+    {
+      "id": "trip-1771925134093",
+      "destination": "Lisbon, Portugal",
+      "startDate": "2020-01-02T00:00:00.000Z",
+      "activities": [
+        {
+          "id": "act-1771925160716",
+          "name": "Castle or Palace Tour",
+          "cost": 450,
+          "category": "sightseeing",
+          "startTime": "2020-02-02T12:00:54.000Z"
+        }
+      ]
+    },
+    {
+      "id": "trip-1771925236259",
+      "destination": "Vienna, Austria",
+      "startDate": "2020-01-02T00:00:00.000Z",
+      "activities": [
+        {
+          "id": "act-1771925254880",
+          "name": "Nature Walk (guided)",
+          "cost": 250,
+          "category": "outdoors",
+          "startTime": "2020-01-02T08:00:54.000Z"
+        }
+      ]
+    },
+    {
+      "id": "trip-1771925303455",
+      "destination": "Berlin, Germany",
+      "startDate": "2020-01-02T00:00:00.000Z",
+      "activities": [
+        {
+          "id": "act-1771925325567",
+          "name": "Cooking Class",
+          "cost": 1100,
+          "category": "culinary",
+          "startTime": "2020-01-02T09:00:54.000Z"
+        }
+      ]
     }
   ]
 }

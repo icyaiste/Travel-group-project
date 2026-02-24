@@ -174,7 +174,7 @@ const addActivity = async (): Promise<void> => {
     name: activityData.name,
     cost: activityData.cost,
     category: activityData.category,
-    startTime: new Date(`${activityDate}T${startTime}:00`),
+    startTime: new Date(`${activityDate}T${startTime}:54`),
   };
 
   const trip = db.trips.find((t) => {return t.id === tripId})!;
