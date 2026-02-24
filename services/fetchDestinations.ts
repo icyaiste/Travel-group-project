@@ -1,3 +1,4 @@
+
 import type { CountryInfo, GetDestinationInfo } from "../types/interfaces";
 
 export const getCountryInfo = async (
@@ -45,6 +46,3 @@ export const getCountryInfo = async (
   }
 };
 
-getCountryInfo("France").catch((error) => {
-  console.error("Unhandled error:", error);
-});
